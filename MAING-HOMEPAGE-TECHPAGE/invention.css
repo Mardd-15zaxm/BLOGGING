@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 97.80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.namecompany {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.4s ease;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #1B03A3;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.search-icon {
+    width: 20px;
+    margin-left: 5px;
+}
+
+/* Get Started Button */
+.get-started {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.get-started:hover {
+    background-color: #008000;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background: url('tech-hero.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}

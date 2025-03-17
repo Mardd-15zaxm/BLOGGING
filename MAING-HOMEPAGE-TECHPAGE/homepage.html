@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Blogger Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="technology-page.html">Technologies</a></li>
+                <li><a href="https://***.com">Inventions</a></li>
+                <li><a href="https://***.com">Posts</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <h3 class="namecompany">Tech Blog</h3>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <img src="search.png" alt="Search Icon" class="search-icon">
+        </div>
+        <button class="get-started">Get Started</button>
+    </header>
+    <main>
+      <section class="hero">
+          <div class="hero-overlay"></div> <!-- Black overlay -->
+          <img src="background11.jpg" alt="Desk Setup" class="hero-image" />
+          <div class="hero-content">
+              <h2 class="caption">Explore More About Technologies</h2>
+              <button class="get-started-hero">Get Started</button>
+              <div class="categories">
+                <div class="category">
+                    <div class="category-title">Latest</div>
+                    <p class="category-description">Stay updated with the latest trends, news, and innovations in technology.</p>
+                    <button>View More</button>
+                </div>
+                <div class="category">
+                    <div class="category-title">Gadgets</div>
+                    <p class="category-description">Discover the newest and most exciting gadgets that are shaping the future.</p>
+                    <button>View More</button>
+                </div>
+                <div class="category">
+                    <div class="category-title">IT</div>
+                    <p class="category-description">Explore in-depth articles on software, cybersecurity, and IT solutions.</p>
+                    <button>View More</button>
+                </div>
+            </div>            
+          </div>
+      </section>
+  </main>  
+      <script>
+        let images = ['background1.jpg', 'background2.jpg', 'background3.jpg']; // Ensure these images exist
+let index = 0;
+        window.onload = function() {
+           setTimeout(() => {
+               document.querySelector('.categories').classList.add('show');
+           }, 1000); // Delayed pop-up after 1 second
+      };
+
+function changeBackground() {
+    let heroImage = document.querySelector('.hero-image');
+    let overlay = document.querySelector('.hero-overlay');
+
+    // Step 1: Fade in black overlay (to hide white flash)
+    overlay.style.opacity = "1";  
+
+    setTimeout(() => {
+        // Step 2: Change the background image
+        heroImage.src = images[index];  
+
+        setTimeout(() => {
+            // Step 3: Fade out black overlay to reveal the new image
+            overlay.style.opacity = "0";  
+        }, 300); // Wait a bit before revealing
+
+        index = (index + 1) % images.length; // Loop through images
+    }, 1200); // Hold black screen before switching
+}
+
+// Start image transition every 5 seconds
+setInterval(changeBackground, 5000);
+    </script>
+</body>
+</html>

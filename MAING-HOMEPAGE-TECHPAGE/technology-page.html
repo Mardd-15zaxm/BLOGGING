@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies - Tech Blog</title>
+    <link rel="stylesheet" href="techstyle.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Blogger Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="technology-page.html">Technologies</a></li>
+                <li><a href="inventions.html">Inventions</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <h3 class="namecompany">Tech Blog</h3>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <img src="search.png" alt="Search Icon" class="search-icon">
+        </div>
+        <button class="get-started">Get Started</button>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <img src="background11.jpg" alt="Technology Banner" class="hero-image" />
+            <div class="hero-content">
+                <h2 class="caption">Discover the Latest in Technology</h2>
+            </div>
+        </section>
+        
+        <section class="technologies">
+            <h2 class="tech-title">TECHNOLOGIES</h2>
+            <div class="technology-grid">
+                <div class="tech-box">
+                    <img src="Aicon.png" alt="AI Icon" class="tech-icon">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Explore advancements in AI, from machine learning to deep learning.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="tech-box">
+                    <img src="Bicon.png" alt="Blockchain Icon" class="tech-icon">
+                    <h3>Blockchain</h3>
+                    <p>Learn how blockchain is revolutionizing industries worldwide.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="tech-box">
+                    <img src="Cycon.png" alt="Cybersecurity Icon" class="tech-icon">
+                    <h3>Cybersecurity</h3>
+                    <p>Stay updated on the latest in cybersecurity and data protection.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="tech-box">
+                    <img src="clcon.png" alt="Cloud Computing Icon" class="tech-icon">
+                    <h3>Cloud Computing</h3>
+                    <p>Discover how cloud computing is shaping the future of IT.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="tech-box">
+                    <img src="roIcon.png" alt="Robotics Icon" class="tech-icon">
+                    <h3>Robotics</h3>
+                    <p>See how robotics is transforming industries and daily life.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="tech-box">
+                    <img src="vrIcon.png" alt="VR Icon" class="tech-icon">
+                    <h3>Virtual Reality</h3>
+                    <p>Experience the future of entertainment and training through VR.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.querySelector('.technology-grid').classList.add('show');
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
